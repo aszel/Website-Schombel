@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 /************************************************* clear dumb stuff */
 * { margin:0; padding:0; border:0;}
@@ -7,19 +6,57 @@
 /************************************************* basics */
 body {
 	background: url(img/background_top1.png) repeat-x #fff;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
 }
 
-#main {
-	width: 1024px;
-	margin:auto;
-	background-image:url(img/headerbg.png);
-	background-repeat:no-repeat;
-	background-position:380px 1%;
+#header .subheadline {
+	color:#484848;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+  padding-top: 10px;
+	padding-bottom: 20px;
+	line-height: 20px;
 }
+
+@media (min-width: 400px) {
+	#maincontainer {
+		background-color: red;
+	}
+	h1 a {
+		font-size: 1.2em;
+	}
+	#header .subheadline {
+		font-size: 1em;
+	}
+}
+@media (min-width: 600px) {
+	#maincontainer {
+		background-color: orange;
+	}
+	h1 a {
+		font-size: 1.4em;
+	}
+}
+@media (min-width: 800px) {
+	#maincontainer {
+		background-color: green;
+	}
+	h1 a {
+		font-size: 1.9em;
+	}
+}
+@media (min-width: 1000px) {
+	#maincontainer {
+		background-color: blue;
+	}
+	h1 a {
+		font-size: 2em;
+	}
+}
+
 
 #header {
-	width: 100%;
 	margin-top: 2em;
 }
 
@@ -29,54 +66,33 @@ p {
 
 /************************************************* header */
 h1 a{
-	padding: 20px 20px 0px 20px;
 	color:#484848;
-    font-family: georgia,serif;
-    font-size: 48px;
-    font-style: italic;
-    font-weight: normal;
-    letter-spacing: -0.03em;
-    line-height: 45px;
+	padding-top: 20px;
+  font-family: georgia,serif;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: -0.03em;
 	text-decoration:none;
 }
 
-
-#header p {
-	color: #aaa;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	padding: 2px 20px 20px 20px;
-	line-height: 20px;
-}
-
-#header a:hover {
-	/*color: #ddd;*/
-}
-
 /************************************************* navigation */
-#nav {
-	width: 100%;
-}
-
 #nav ul {
-	padding: 50px 20px 11px 20px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	list-style-type: none;
 }
 
 #nav li {
-	display: inline;
-	margin-right: 7px;
-	/*float:right;*/
+	float: left;
+	margin-right: 15px;
 }
 
 #nav li a {
-	font-size: 18px;
+	display: block;
+	font-size: 1.8em;
 	color: #484848;
 	text-decoration: none;
 	text-shadow: #fff 0px 1px 0px;
-	-khtml-border-radius: 	10px;
-	-moz-border-radius: 	10px;
-	-webkit-border-radius: 	10px;
-	border-radius: 			10px;
 	border:1px solid #ccc;
 	background:#ddd;
 	padding: 2px 7px;
@@ -92,15 +108,15 @@ h1 a{
 	border:1px solid #888;
 }
 
-#main div h2 {
+#maincontainer div h2 {
 	color:#484848;
-    font-family: georgia,serif;
-    font-size: 26px;
-    font-style: italic;;
+  font-family: georgia,serif;
+  font-size: 26px;
+  font-style: italic;;
 	font-weight: normal;
 }
 
-#main div p {
+#maincontainer div p {
 	font-size: 12px;
 	color: #666;
 	margin-top: 2px;
@@ -111,8 +127,8 @@ h1 a{
 /************************************************* content general */
 
 .wrapper {
-	padding: 20px;
 	min-height:460px;
+	padding-top: 80px;
 }
 
 /* tabs #site_one, tabs #site_two, tabs #site_three, tabs #site_four, tabs #site_five {*/
@@ -213,7 +229,7 @@ h1 a{
 	margin:10px 0 15px 0;
 	font-weight:bold;
 	font-size:14px;
-	
+
 }
 
 .apple_overlay h3 {
@@ -314,7 +330,7 @@ h1 a{
 
 	/* this makes it possible to add next button beside scrollable */
 	float:left;
-	
+
 	/* custom decorations */
 	border:1px solid #ccc;
 }
@@ -352,16 +368,16 @@ a.browse {
 /* right */
 a.right 			{ background-position: 0 -30px; clear:right; margin-right: 0px;}
 a.right:hover 		{ background-position:-30px -30px; }
-a.right:active 		{ background-position:-60px -30px; } 
+a.right:active 		{ background-position:-60px -30px; }
 
 /* left */
-a.left				{ margin-left: 0px; } 
+a.left				{ margin-left: 0px; }
 a.left:hover  		{ background-position:-30px 0; }
 a.left:active  		{ background-position:-60px 0; }
 
 /* disabled navigational button */
 a.disabled {
-	visibility:hidden !important;		
+	visibility:hidden !important;
 }
 
 /* position and dimensions of the navigator */
@@ -385,12 +401,12 @@ a.disabled {
 
 /* mouseover state */
 .navi a:hover {
-	background-position:0 -8px;      
+	background-position:0 -8px;
 }
 
 /* active state (current page state) */
 .navi a.active {
-	background-position:0 -16px;     
+	background-position:0 -16px;
 }
 
 
@@ -401,63 +417,6 @@ a.disabled {
 }
 
 /************************************************* content contact */
-#form_wrapper {
-	/*background-image:url(img/KontaktPfeil.png);
-	background-repeat:no-repeat;
-	background-position:300px 100px;*/
-}
-
-
-/* 
-	
-*/
-#myform {
-	width:400px;
-	background: #666;
-	padding:15px 20px; 
-	color:#eee;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;	
-} 
-
-#myform fieldset {
-	border:0;
-	margin:0;
-	padding:0;
-	/*background:#333333 url(...) no-repeat scroll 215px 40px;*/
-}
-
-#myform h3 	{ 
-	color:#fff;
-	margin-top:0px; 
-}
-
-#myform p {
-	font-size:11px;
-	color:#fff !important;
-}
-
-/* input field */
-#myform input, textarea {
-	border:1px solid #444;
-	background-color:#bbb;
-	padding:5px;
-	color:#222;
-	font-size:12px;
-	
-	/* CSS3 spicing */
-	/*text-shadow:0px 1px 0px #fff;*/
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;	
-}
-
-#myform input:focus, textarea:focus	{ 
-	background-color:#ddd; 
-}
-
-#myform input:active, textarea:active { 
-	background-color:#eee; 
-}
 
 .button {
 	display: inline-block;
@@ -472,7 +431,7 @@ a.disabled {
 	font: 14px/100% Arial, Helvetica, sans-serif;
 	padding: .4em 2em .45em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
+	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -520,21 +479,21 @@ a.disabled {
 	border:1px solid #E1E16D;
 	padding:4px 10px;
 	color:#000;
-	display:none;	
-	
+	display:none;
+
 	-moz-border-radius:4px;
-	-webkit-border-radius:4px; 
+	-webkit-border-radius:4px;
 	-moz-border-radius-bottomleft:0;
-	-moz-border-radius-topleft:0;	
-	-webkit-border-bottom-left-radius:0; 
+	-moz-border-radius-topleft:0;
+	-webkit-border-bottom-left-radius:0;
 	-webkit-border-top-left-radius:0;
-	
+
 	-moz-box-shadow:0 0 6px #ddd;
-	-webkit-box-shadow:0 0 6px #ddd;	
+	-webkit-box-shadow:0 0 6px #ddd;
 }
 
 .error p {
-	margin:0;		
+	margin:0;
 }
 
 /* field label */
