@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import 'grid.css';
 
 /************************************************* clear dumb stuff */
 * { margin:0; padding:0; border:0;}
@@ -13,10 +14,8 @@ body {
 #header .subheadline {
 	color:#484848;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.5em;
+	font-size: 1em;
   padding-top: 10px;
-	padding-bottom: 20px;
-	line-height: 20px;
 }
 
 @media (min-width: 400px) {
@@ -76,36 +75,43 @@ h1 a{
 }
 
 /************************************************* navigation */
+#nav {
+	display: inline-block;
+	background-color: #ddd;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
 #nav ul {
-	margin-top: 50px;
-	margin-bottom: 15px;
 	list-style-type: none;
 }
 
 #nav li {
 	float: left;
-	margin-right: 15px;
+}
+
+#nav li:last-child {
+	margin-right: 0;
 }
 
 #nav li a {
 	display: block;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: #484848;
 	text-decoration: none;
 	text-shadow: #fff 0px 1px 0px;
-	border:1px solid #ccc;
+	border-right: :1px solid red;
 	background:#ddd;
 	padding: 2px 7px;
 }
 
 #nav li a:hover {
 	color: #000;
-	border:1px solid #aaa;
+	background-color: white;
 }
 
 #nav li a:active {
 	background:#ccc;
-	border:1px solid #888;
 }
 
 #maincontainer div h2 {
@@ -126,26 +132,16 @@ h1 a{
 
 /************************************************* content general */
 
-.wrapper {
-	min-height:460px;
-	padding-top: 80px;
-}
+.wrapper {}
 
 /* tabs #site_one, tabs #site_two, tabs #site_three, tabs #site_four, tabs #site_five {*/
 /*#site_one, #site_two, #site_three, #site_four, #site_five {*/
 .tab {
 	display:none;
 	position:absolute;
-	width:900px;
-	height:500px;
 }
 
 #tab_two {
-	float:left;
-}
-
-#intro_text_home {
-	width: 500px;
 	float:left;
 }
 
@@ -161,7 +157,6 @@ h1 a{
 /************************************************* content home */
 #wappen {
 	float:right;
-	margin-right: 100px;
 	margin-top:20px;
 }
 
@@ -170,15 +165,8 @@ h1 a{
 }
 
 #subfeatures {
-	margin-top:230px;
 	padding-top: 50px;
 	background:url(img/divider-wave.jpg) top no-repeat;
-}
-
-#subfeatures div {
-	float:left;
-	/*padding-left:10px;*/
-	padding-right:40px;
 }
 
 #subfeatures div h3 {
