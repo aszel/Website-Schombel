@@ -23,36 +23,37 @@ body {
   padding-top: 10px;
 }
 
-@media (min-width: 400px) {
-	h1 a {
-		font-size: 1.2em;
-	}
-	#header .subheadline {
-		font-size: 1em;
-	}
-}
-@media (min-width: 600px) {
-	h1 a {
-		font-size: 1.4em;
-	}
-}
-@media (min-width: 800px) {
-	h1 a {
-		font-size: 1.9em;
-	}
-}
-@media (min-width: 1000px) {
-	h1 a {
-		font-size: 2em;
-	}
-}
-
 #header {
 	margin-top: 2em;
 }
 
 p {
 	text-align:justify;
+}
+
+.burger {
+	font-size: 1.4em;
+	padding-top: 2px;
+}
+
+.burger a {
+	color: #484848;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+#collapsable {
+	display: none;
+}
+
+#collapsable li {
+	float: none!important;
+}
+
+.show {
+	display: block !important;
 }
 
 /************************************************* header */
@@ -69,9 +70,8 @@ h1 a{
 /************************************************* navigation */
 #nav {
 	display: inline-block;
-	background-color: #ddd;
+	width: 100%;
 	margin-top: 35px;
-	margin-bottom: 25px;
 }
 
 #nav ul {
@@ -86,7 +86,7 @@ h1 a{
 	margin-right: 0;
 }
 
-#nav li a {
+#nav li a, #navsmall li a {
 	display: block;
 	font-size: 1.4em;
 	color: #484848;
@@ -96,7 +96,7 @@ h1 a{
 	padding: 2px 7px;
 }
 
-#nav li a:hover {
+#nav li a:hover, #navsmall li a:hover {
 	color: #000;
 	background-color: white;
 }
@@ -105,23 +105,18 @@ h1 a{
 	background:#ccc;
 }
 
-#maincontainer div h2 {
-	color:#484848;
-  font-family: georgia,serif;
-  font-size: 26px;
-  font-style: italic;;
-	font-weight: normal;
-}
-
-#maincontainer div p {
-	font-size: 12px;
-	color: #666;
-	margin-top: 2px;
-	line-height: 20px;
-}
-
 #nav .active {
-	background-color: red;
+	background-color: white;
+}
+
+#navsmall {
+	position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#navsmall ul {
+	list-style-type: none;
 }
 
 
@@ -355,6 +350,54 @@ label {
 
 #terms input {
 	margin:0 5px;
+}
+
+@media (max-width: 399px) {
+	.hide-xsmall {
+		display: none!important;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+	h1 a {
+		font-size: 1.2em;
+	}
+	#header .subheadline {
+		font-size: 1em;
+	}
+	.hide-small {
+    display: none!important;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 630px) {
+	#nav li a {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+	h1 a {
+		font-size: 1.3em;
+	}
+	.hide-medium {
+    display: none!important;
+	}
+}
+
+@media (min-width: 800px) {
+	h1 a {
+		font-size: 1.8em;
+	}
+	.hide-large {
+    display: none!important;
+	}
+}
+
+@media (min-width: 1000px) {
+	h1 a {
+		font-size: 2em;
+	}
 }
 
 

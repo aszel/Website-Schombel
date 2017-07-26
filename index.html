@@ -10,8 +10,8 @@
 	<![endif]-->
     <script src="assets/js/jquerytools.js"></script>
 		<script>
-		function myFunction() {
-		    var x = document.getElementById("nav");
+		function toggleMenu() {
+		    var x = document.getElementById("collapsable");
 		    if (x.className.indexOf("show") == -1) {
 		        x.className += "show";
 		    } else {
@@ -33,17 +33,26 @@
 	<div id="nav">
 		<ul class="">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="/ferienhaus">Gro&szlig;es Ferienhaus</a></li>
-      <li><a href="/gartenhaus">Gartenhaus</a></li>
-      <li><a href="/anfahrt">Anfahrt</a></li>
-      <li><a href="/kontakt">Kontakt</a></li>
-			<li>
-				<a class="hide-medium hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
-					<i class="fa fa-bars"></i>
-				</a>
-			</li>
+      <li><a href="/ferienhaus" class="hide-xsmall hide-small collapsable">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="/gartenhaus" class="hide-xsmall hide-small collapsable">Gartenhaus</a></li>
+      <li><a href="/anfahrt" class="hide-xsmall hide-small collapsable">Anfahrt</a></li>
+      <li><a href="/kontakt" class="hide-xsmall hide-small collapsable">Kontakt</a></li>
     </ul>
+		<div class="burger hide-medium hide-large pull-right">
+			<a class="" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
   </div>
+
+	<div id="navsmall">
+		<ul id="collapsable">
+			<li><a href="/ferienhaus" class="">Gro&szlig;es Ferienhaus</a></li>
+			<li><a href="/gartenhaus" class="">Gartenhaus</a></li>
+			<li><a href="/anfahrt" class="">Anfahrt</a></li>
+			<li><a href="/kontakt" class="">Kontakt</a></li>
+		</ul>
+	</div>
 
   <div id="content">
 
