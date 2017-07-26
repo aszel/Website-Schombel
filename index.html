@@ -2,12 +2,23 @@
 <html>
 <head>
 	<title>Pension Schombel in Meuro</title>
-	<link rel="stylesheet" type="text/css" href="style3.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
 
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <script src="jquerytools.js"></script>
+    <script src="assets/js/jquerytools.js"></script>
+		<script>
+		function myFunction() {
+		    var x = document.getElementById("nav");
+		    if (x.className.indexOf("show") == -1) {
+		        x.className += "show";
+		    } else {
+		        x.className = x.className.replace("show", "");
+		    }
+		}
+		</script>
 </head>
 
 
@@ -20,12 +31,17 @@
 	</div>
 
 	<div id="nav">
-    <ul class="slidetabs">
+		<ul class="">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="/ferienhaus">Gro&szlig;es Ferienhaus</a></li>
       <li><a href="/gartenhaus">Gartenhaus</a></li>
       <li><a href="/anfahrt">Anfahrt</a></li>
       <li><a href="/kontakt">Kontakt</a></li>
+			<li>
+				<a class="hide-medium hide-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+			</li>
     </ul>
   </div>
 
@@ -34,13 +50,12 @@
 		<h2>Herzlich Willkommen</h2>
 		<div class="Grid Grid--gutters u-textCenter">
 		  <div class="Grid-cell">
-		    <br />in Meuro.<br />
 				Die Familie Schombel hei&szlig;t Sie recht herzlich willkommen in der Gemeinde Meuro in der Niederlausitz.
 	      Die Ferienh&auml;user liegen in unmittelbarer N&auml;he zum Lausitzring im S&uuml;den Brandenburgs.<br />
 	      Wir w&uuml;rden uns freuen Sie bei Gelegenheit in unserem kleinen Reich begr&uuml;&szlig;en zu d&uuml;rfen.
 		  </div>
 		  <div class="Grid-cell Grid--1of4">
-		    <img id="wappen" src="img/wappen.png" width="150"/>
+		    <img id="wappen" src="assets/img/wappen.png" width="150"/>
 		  </div>
 		</div>
 
