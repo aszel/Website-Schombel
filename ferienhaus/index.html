@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pension Schombel in Meuro</title>
+	<link rel="stylesheet" type="text/css" href="../style3.css" />
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script src="../jquerytools.js"></script>
+</head>
+
+<body>
+<div id="main">
+
+	<div id="header">
+		<h1><a href="../index.html">Ferienhaus Schombel in Meuro</a></h1>
+		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
+	</div>
+
+  <div id="nav">
+    <ul class="slidetabs">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../ferienhaus" class="active">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="../gartenhaus">Gartenhaus</a></li>
+      <li><a href="../anfahrt">Anfahrt</a></li>
+      <li><a href="../kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+
+    <h2>Das gro&szlig;e Ferienhaus</h2>
+    <p>
+        Es erwartet Sie ein gro&szlig;z&uuml;giges Haus mit Terrasse am Teich. Hier kann man grillen oder den Tag am Lagerfeuer ausklingen lassen. Im Erdgeschoss befindet sich der Wohnraum mit komplett ausgestatteter K&uuml;che. Ein knisterndes Kaminfeuer sorgt f&uuml;r Gem&uuml;tlichkeit am Abend. Ein Essplatz mit viel Licht und ein kleines Bad mit Dusche und WC erg&auml;nzen das Erdgeschoss. Im Obergeschoss befinden sich die Schlafgelegenheiten f&uuml;r bis zu 6 Personen. Handt&uuml;cher und Bettw&auml;sche geh&ouml;ren selbstverst&auml;ndlich zur Ausstattung.
+    </p>
+
+    <a class="prev browse left"></a>
+    <div class="scrollable" id=browsable_1>
+        <div class="items">
+            <div>
+                <p><img src="../img/pension/DSC02324.JPG" width="700"/></p>
+            </div>
+            <div>
+                <p><img src="../img/pension/DSC00374.JPG" width="600"/></p>
+            </div>
+            <div>
+                <p><img src="../img/pension/DSC01152.jpg" width="700"/></p>
+            </div>
+            <div>
+                <p><img src="../img/pension/DSC01157.jpg" width="700"/></p>
+            </div>
+       </div>
+    </div><!-- scrollable -->
+    <a class="next browse right"></a>
+    <div class="navi"></div>
+    <script>
+        $(document).ready(function() {
+        $("#browsable_1").scrollable({circular: true}).navigator();
+        });
+    </script>
+  </div><!--- content -->
+</div><!--- main -->
+
+</html>
+</body>

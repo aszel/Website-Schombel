@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import 'grid.css';
 
-/************************************************* clear dumb stuff */
 * { margin:0; padding:0; border:0;}
 
 /************************************************* basics */
@@ -99,7 +98,6 @@ h1 a{
 	font-size: 1.4em;
 	color: #484848;
 	text-decoration: none;
-	text-shadow: #fff 0px 1px 0px;
 	border-right: :1px solid red;
 	background:#ddd;
 	padding: 2px 7px;
@@ -129,28 +127,8 @@ h1 a{
 	line-height: 20px;
 }
 
-
-/************************************************* content general */
-
-.wrapper {}
-
-/* tabs #site_one, tabs #site_two, tabs #site_three, tabs #site_four, tabs #site_five {*/
-/*#site_one, #site_two, #site_three, #site_four, #site_five {*/
-.tab {
-	display:none;
-	position:absolute;
-}
-
-#tab_two {
-	float:left;
-}
-
-#intro_text_features {
-	width: 650px;
-}
-
-#tab_three #intro_text_examples {
-	width: 550px;
+#nav .active {
+	background-color: red;
 }
 
 
@@ -192,118 +170,6 @@ h1 a{
 	clear:both;
 }
 
-
-/************************************************* content overlays */
-
-.apple_overlay {
-	display:none;
-	background-image:url(img/overlaywhitebackground_wide.png);
-	width:850px;
-	padding:35px;
-	font-size:11px;
-	overflow:auto;
-}
-
-/* close button */
-.apple_overlay .close {
-	background-image:url(img/overlayclosebutton.png);
-	position:absolute; right:5px; top:5px;
-	cursor:pointer;
-	height:35px;
-	width:35px;
-}
-
-.apple_overlay h2 {
-	margin:10px 0 15px 0;
-	font-weight:bold;
-	font-size:14px;
-
-}
-
-.apple_overlay h3 {
-	font-weight:bold;
-	font-size:14px;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-.apple_overlay p {
-	margin-bottom:20px;
-}
-
-.apple_overlay p a {
-	text-decoration:none;
-	color: #447BC4;
-}
-
-#overlay_triggers {
-	margin-top:10px;
-}
-
-#overlay_triggers img {
-	background-color:#fff;
-	padding:2px;
-	border:1px solid #ccc;
-	margin:2px 5px;
-	cursor:pointer;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-}
-
-.overlay_content {
-}
-
-.over_inner {
-	height: 505px;
-	overflow:auto;
-}
-
-.over_inner p {
-	text-align:justify;
-}
-
-#over_inner1 {
-	width:825px;
-	background: url(img/wappen_schipkau.png) top right no-repeat;
-}
-
-#over_inner2 {
-	width:800px;
-	background: url(img/lausitzring_bg.png) top right no-repeat;
-}
-
-#over_inner3 {
-	width:825px;
-	background: url(img/land_brandenburg.png) top right no-repeat;
-}
-
-#info_meuro {
-	width: 670px;
-}
-
-#info_lausitzring {
-	width: 600px;
-	padding-bottom: 50px;
-	text-align:justify;
-	background:url(img/divider-wave_small.png) bottom left no-repeat;
-}
-
-#info_brandenburg {
-	width: 650px;
-	text-align:justify;
-}
-
-#lausitzring_links_wrapper {
-	margin-top: 10px;
-}
-
-#lausitzring_links_left {
-	float:left;
-}
-
-#lausitzring_links_right {
-	float:right;
-}
 /************************************************* scrollables */
 /*
 	root element for the scrollable.

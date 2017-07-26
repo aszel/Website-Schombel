@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pension Schombel in Meuro</title>
+	<link rel="stylesheet" type="text/css" href="../style3.css" />
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script src="../jquerytools.js"></script>
+</head>
+
+
+<body>
+<div id="main">
+
+	<div id="header">
+		<h1><a href="index.html">Ferienhaus Schombel in Meuro</a></h1>
+		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
+	</div>
+
+	<div id="nav">
+    <ul class="slidetabs">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../ferienhaus">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="../gartenhaus" class="active">Gartenhaus</a></li>
+      <li><a href="../anfahrt">Anfahrt</a></li>
+      <li><a href="../kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+
+		<h2>Gartenhaus</h2>
+		<p>
+			Das liebevoll gestaltete Gartenhaus befindet sich auf einem separaten Wiesengrundst&uuml;ck.
+	Optimal ausgestattet ist es f&uuml;r 2 Personen, Platz zum Schlafen finden aber auch bis zu 4 Personen. Wir bieten ein Doppelbett, 2 Schlafliegen im Wohnbereich, eine Minik&uuml;che mit 2 Kochplatten, K&uuml;hlschrank, Sp&uuml;le und Geschirr, einen Ess-Tresen, Kaminofen und ein Bad mit Dusche und WC. Handt&uuml;cher und Bettw&auml;sche sind selbstverst&auml;ndlich vorhanden.
+		</p>
+
+		<a class="prev browse left"></a>
+		<div class="scrollable" id=browsable_2>
+				<div class="items">
+						<div>
+								<p><img src="../img/gartenhaus/DSC01172.jpg" width="700"/></p>
+						</div>
+						<div>
+								<p><img src="../img/gartenhaus/DSC01162.jpg" width="700"/></p>
+						</div>
+						<div>
+								<p><img src="../img/gartenhaus/DSC01173.jpg" width="700"/></p>
+						</div>
+						<div>
+								<p><img src="../img/gartenhaus/DSC01176.jpg" width="700"/></p>
+						</div>
+			 </div>
+		</div>
+		<a class="next browse right"></a>
+		<div class="navi"></div>
+		<script>
+				$(document).ready(function() {
+				$("#browsable_2").scrollable({circular: true}).navigator();
+				});
+		</script>
+  </div><!--- content -->
+
+</div><!--- main -->
+
+</html>
+</body>
