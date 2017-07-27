@@ -79,9 +79,8 @@ h1 a{
 /************************************************* navigation */
 #nav {
 	display: inline-block;
-	width: calc(100% + 40px);
+	width: 100%;
 	margin-top: 35px;
-	padding-left: 20px;
 	background-color: #dbecfd;
 }
 

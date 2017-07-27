@@ -4,6 +4,7 @@
 	<title>Pension Schombel in Meuro</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
+	<link href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width">
 	<script src="../assets/js/script.js"></script>
 </head>
@@ -11,7 +12,6 @@
 
 <body>
 <div class="main">
-
 	<div id="header">
 		<h1><a href="/">Ferienhaus Schombel in Meuro</a></h1>
 		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
@@ -19,17 +19,19 @@
 </div>
 
 <div id="nav">
-	<ul class="">
-    <li><a href="/index.html" class="hide-xsmall hide-small">Home</a></li>
-    <li><a href="/ferienhaus" class="hide-xsmall hide-small">Gro&szlig;es Ferienhaus</a></li>
-    <li><a href="/gartenhaus" class="active hide-xsmall hide-small">Gartenhaus</a></li>
-    <li><a href="/anfahrt" class="hide-xsmall hide-small">Anfahrt</a></li>
-    <li><a href="/kontakt" class="hide-xsmall hide-small">Kontakt</a></li>
-  </ul>
-	<div class="burger hide-medium hide-large pull-right">
-		<a style="text-decoration: none;" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
-			Menu <i class="fa fa-bars"></i>
-		</a>
+	<div class="main">
+		<ul class="">
+	    <li><a href="/index.html" class="hide-xsmall hide-small">Home</a></li>
+	    <li><a href="/ferienhaus" class="hide-xsmall hide-small">Gro&szlig;es Ferienhaus</a></li>
+	    <li><a href="/gartenhaus" class="active hide-xsmall hide-small">Gartenhaus</a></li>
+	    <li><a href="/anfahrt" class="hide-xsmall hide-small">Anfahrt</a></li>
+	    <li><a href="/kontakt" class="hide-xsmall hide-small">Kontakt</a></li>
+	  </ul>
+		<div class="burger hide-medium hide-large pull-right">
+			<a style="text-decoration: none;" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+				Menu <i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</div>
 </div>
 
@@ -52,15 +54,48 @@
 	Optimal ausgestattet ist es f&uuml;r 2 Personen, Platz zum Schlafen finden aber auch bis zu 4 Personen. Wir bieten ein Doppelbett, 2 Schlafliegen im Wohnbereich, eine Minik&uuml;che mit 2 Kochplatten, K&uuml;hlschrank, Sp&uuml;le und Geschirr, einen Ess-Tresen, Kaminofen und ein Bad mit Dusche und WC. Handt&uuml;cher und Bettw&auml;sche sind selbstverst&auml;ndlich vorhanden.
 		</p>
 
-		<!--
-		<img src="../img/gartenhaus/DSC01172.jpg" />
-		<img src="../img/gartenhaus/DSC01162.jpg" />
-		<img src="../img/gartenhaus/DSC01173.jpg" />
-		<img src="../img/gartenhaus/DSC01176.jpg" />
--->
+		<div class="wave"></div>
+
+		<div id="aniimated-thumbnials">
+			<a href="../assets/img/gartenhaus/DSC01162.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01162.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01171.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01171.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01172.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01172.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01173.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01173.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01175.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01175.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01176.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01176.jpg" />
+			</a>
+			<a href="../assets/img/gartenhaus/DSC01178.jpg">
+			  <img src="../assets/img/gartenhaus/thumbs/DSC01178.jpg" />
+			</a>
+		</div>
+
   </div><!--- content -->
 
 </div><!--- main -->
+
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
+<script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
+
+<script>
+lightGallery(document.getElementById('aniimated-thumbnials'), {
+    thumbnail:true
+});
+</script>
 
 </html>
 </body>
