@@ -2,32 +2,48 @@
 <html>
 <head>
 	<title>Pension Schombel in Meuro</title>
-	<link rel="stylesheet" type="text/css" href="../style3.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
+	<meta name="viewport" content="width=device-width">
 
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <script src="../jquerytools.js"></script>
+    <script src="../assets/js/jquerytools.js"></script>
+		<script src="../assets/js/script.js"></script>
 </head>
-
 
 <body>
 <div id="main">
 
 	<div id="header">
-		<h1><a href="index.html">Ferienhaus Schombel in Meuro</a></h1>
+		<h1><a href="../index.html">Ferienhaus Schombel in Meuro</a></h1>
 		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
 	</div>
 
 	<div id="nav">
-    <ul class="slidetabs">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../ferienhaus">Gro&szlig;es Ferienhaus</a></li>
-      <li><a href="../gartenhaus">Gartenhaus</a></li>
-      <li><a href="../anfahrt" class="active">Anfahrt</a></li>
-      <li><a href="../kontakt">Kontakt</a></li>
+		<ul class="">
+      <li><a href="/index.html" class="hide-xsmall hide-small">Home</a></li>
+      <li><a href="/ferienhaus" class="hide-xsmall hide-small">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="/gartenhaus" class="hide-xsmall hide-small">Gartenhaus</a></li>
+      <li><a href="/anfahrt" class="active hide-xsmall hide-small">Anfahrt</a></li>
+      <li><a href="/kontakt" class="hide-xsmall hide-small">Kontakt</a></li>
     </ul>
+		<div class="burger hide-medium hide-large pull-right">
+			<a class="" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
   </div>
+
+	<div id="navsmall">
+		<ul id="collapsable">
+			<li><a href="/ferienhaus" class="">Gro&szlig;es Ferienhaus</a></li>
+			<li><a href="/gartenhaus" class="">Gartenhaus</a></li>
+			<li><a href="/anfahrt" class="">Anfahrt</a></li>
+			<li><a href="/kontakt" class="">Kontakt</a></li>
+		</ul>
+	</div>
 
   <div class="content">
 

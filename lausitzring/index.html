@@ -2,12 +2,10 @@
 <html>
 <head>
 	<title>Pension Schombel in Meuro</title>
-	<link rel="stylesheet" type="text/css" href="../style3.css" />
-
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-    <script src="../jquerytools.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
+	<meta name="viewport" content="width=device-width">
+	<script src="../assets/js/script.js"></script>
 </head>
 
 
@@ -15,24 +13,39 @@
 <div id="main">
 
 	<div id="header">
-		<h1><a href="index.html">Ferienhaus Schombel in Meuro</a></h1>
+		<h1><a href="/">Ferienhaus Schombel in Meuro</a></h1>
 		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
 	</div>
 
 	<div id="nav">
-    <ul class="slidetabs">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../ferienhaus">Gro&szlig;es Ferienhaus</a></li>
-      <li><a href="../gartenhaus">Gartenhaus</a></li>
-      <li><a href="../anfahrt">Anfahrt</a></li>
-      <li><a href="../kontakt">Kontakt</a></li>
+		<ul class="">
+      <li><a href="/index.html" class="hide-xsmall hide-small">Home</a></li>
+      <li><a href="/ferienhaus" class="hide-xsmall hide-small">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="/gartenhaus" class="hide-xsmall hide-small">Gartenhaus</a></li>
+      <li><a href="/anfahrt" class="hide-xsmall hide-small">Anfahrt</a></li>
+      <li><a href="/kontakt" class="hide-xsmall hide-small">Kontakt</a></li>
     </ul>
+		<div class="burger hide-medium hide-large pull-right">
+			<a style="text-decoration: none;" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+				Menu <i class="fa fa-bars"></i>
+			</a>
+		</div>
   </div>
+
+	<div id="navsmall">
+		<ul id="collapsable">
+			<li><a href="/">Home</a></li>
+			<li><a href="/ferienhaus">Gro&szlig;es Ferienhaus</a></li>
+			<li><a href="/gartenhaus">Gartenhaus</a></li>
+			<li><a href="/anfahrt">Anfahrt</a></li>
+			<li><a href="/kontakt">Kontakt</a></li>
+		</ul>
+	</div>
 
   <div class="content">
 
     <h2>Infos zum Lausitzring</h2>
-    <img src="../img/lausitzring_bg.png" />
+
     <p>
       Der Lausitzring, auch bekannt als EuroSpeedway Lausitz, bietet seit seiner Er&ouml;ffnung am 20. August 2000 Rennsportbegeisterten
       die M&ouml;glichkeit den Profis bei der Arbeit zuzusehen. Neben der DTM, diversen Motorradwettk&auml;mpfen und freien Trainings
@@ -40,33 +53,48 @@
       Abschiedskonzert der &quot;Boehsen Onkelz&quot;. Eine Vielzahl an Spektakeln erwartet Sie auf der Rennstrecke deren Anzahl hier
       aufzuf&uuml;hren vergebens w&auml;re. Bitte besuchen Sie f&uuml;r weitere Informationen die Website des Lausitzrings.
     </p>
-    <div>
-      <div>
-        <p><a href="http://www.lausitzring.de" target="_blank" title="Internetauftritt des Lausitzrings">Lausitzring.de</a><br />
-        Website des Lausitzring / <br />EuroSpeedway Lausitz
-        </p>
-        <p><a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=2&ved=0CEIQjBAwAQ&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNEbu-qTv9LtVXYOj0_01w1vOZE0PA&sig2=MwGQz3-cEZzVjNQqi6saRg&cad=rja" target="_blank" title="Events auf dem Lausitzring">Events</a><br />
-        Auf den folgenden Seiten finden <br />
-        Sie eine &Uuml;bersicht aller Events...</p>
-        <p><a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=5&ved=0CEcQjBAwBA&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Ftickets.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNG3XJzHkqToEZ_B6o2Fs4boTUSgHQ&sig2=3q1Nw90SoKBi-1BRM48miQ&cad=rja" target="_blank" title="zu den Tickets">Tickets</a><br />
-        Wenn Sie es kaum noch erwarten <br />
-        k&ouml;nnen, Ihre Tickets hier...</p>
-      </div>
-      <div>
-        <p><a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=4&ved=0CFYQjBAwAw&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents%2Fzuschauerveranstaltungen.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNHMsKhiN-CFuCgPdViM1GlZbVYJhw&sig2=RXx9c-NBfoaTFY-Qlst3Jg&cad=rja" target="_blank" title="Zuschauerveranstaltungen">Zuschauerveranstaltungen</a><br />
+
+		<img src="../assets/img/lausitzring_bg.png" />
+
+		<div class="wave"></div>
+
+		<div class="Grid Grid--gutters u-textCenter">
+			<div class="Grid-cell">
+				<a href="http://www.lausitzring.de" target="_blank" title="Internetauftritt des Lausitzrings" class="link-to-details">Lausitzring.de</a><br />
+				Website des Lausitzring / <br />EuroSpeedway Lausitz
+			</div>
+			<div class="Grid-cell">
+				<a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=2&ved=0CEIQjBAwAQ&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNEbu-qTv9LtVXYOj0_01w1vOZE0PA&sig2=MwGQz3-cEZzVjNQqi6saRg&cad=rja" target="_blank" title="Events auf dem Lausitzring" class="link-to-details">Events</a><br />
+				Auf den folgenden Seiten finden <br />
+				Sie eine &Uuml;bersicht aller Events...
+			</div>
+
+			<div class="Grid-cell">
+				<a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=5&ved=0CEcQjBAwBA&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Ftickets.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNG3XJzHkqToEZ_B6o2Fs4boTUSgHQ&sig2=3q1Nw90SoKBi-1BRM48miQ&cad=rja" target="_blank" title="zu den Tickets" class="link-to-details">Tickets</a><br />
+				Wenn Sie es kaum noch erwarten <br />
+				k&ouml;nnen, Ihre Tickets hier...
+			</div>
+
+			<div class="Grid-cell">
+				<a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=4&ved=0CFYQjBAwAw&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents%2Fzuschauerveranstaltungen.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNHMsKhiN-CFuCgPdViM1GlZbVYJhw&sig2=RXx9c-NBfoaTFY-Qlst3Jg&cad=rja" target="_blank" title="Zuschauerveranstaltungen" class="link-to-details">Zuschauerveranstaltungen</a><br />
         Alle Informationen rund um den <br />
-        Lausitzring. ... ADAC GT ...</p>
-        <p><a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=6&ved=0CFEQjBAwBQ&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents%2Ffreizeitangebote%2Ffreies-fahren-am-lausitzring.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNHn-O93AgHi6o8sw6GzfOwus2yzjg&sig2=1kbogbiNe3JP-FfAdhqHuw&cad=rja" target="_blank" title="Freies Fahren am Lausitzring">Freies Fahren</a><br />
+        Lausitzring. ... ADAC GT ...
+			</div>
+
+			<div class="Grid-cell">
+				<a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=6&ved=0CFEQjBAwBQ&url=http%3A%2F%2Fwww.lausitzring.de%2Fbesucherportal%2Fevents%2Ffreizeitangebote%2Ffreies-fahren-am-lausitzring.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNHn-O93AgHi6o8sw6GzfOwus2yzjg&sig2=1kbogbiNe3JP-FfAdhqHuw&cad=rja" target="_blank" title="Freies Fahren am Lausitzring" class="link-to-details">Freies Fahren</a><br />
         Fahrspa&szlig; f&uuml;r alle Hobbyrennfahrer: <br />
-        Beim &quot;Freien Fahren&quot; am Lausitzring...</p>
-        <p><a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=7&ved=0CFsQjBAwBg&url=http%3A%2F%2Fwww.lausitzring.de%2Fnc%2Fbesucherportal%2Fevents%2Fgesamtkalender.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNEHAgCn7j3qiaLhV8RvzA4HdJVEfg&sig2=A9X5Y67ukGGZeMcKoaM5Rg&cad=rja" target="_blank" title="Terminkalender">Gesamtkalender</a><br />
+        Beim &quot;Freien Fahren&quot; am Lausitzring...
+			</div>
+
+			<div class="Grid-cell">
+				<a href="http://www.google.de/url?sa=t&rct=j&q=lausitzring&source=web&cd=7&ved=0CFsQjBAwBg&url=http%3A%2F%2Fwww.lausitzring.de%2Fnc%2Fbesucherportal%2Fevents%2Fgesamtkalender.html&ei=FR_MTvXLDJH0sgbws8TZDA&usg=AFQjCNEHAgCn7j3qiaLhV8RvzA4HdJVEfg&sig2=A9X5Y67ukGGZeMcKoaM5Rg&cad=rja" target="_blank" title="Terminkalender" class="link-to-details">Gesamtkalender</a><br />
         Alle anstehenden und vergangenen <br />
-        Termine auf der Rennstrecke...</p>
-      </div>
-    </div>
+        Termine auf der Rennstrecke...
+			</div>
 
+		</div><!-- Grid -->
   </div><!--- content -->
-
 </div><!--- main -->
 
 </html>

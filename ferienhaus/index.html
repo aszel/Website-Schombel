@@ -5,43 +5,39 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
 	<meta name="viewport" content="width=device-width">
-
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-    <script src="../assets/js/jquerytools.js"></script>
-		<script src="../assets/js/script.js"></script>
+	<script src="../assets/js/script.js"></script>
 </head>
 
 <body>
 <div id="main">
 
 	<div id="header">
-		<h1><a href="../index.html">Ferienhaus Schombel in Meuro</a></h1>
+		<h1><a href="/">Ferienhaus Schombel in Meuro</a></h1>
 		<p class="subheadline">Willkommen in den Ferienh&auml;usern direkt am Lausitzring</p>
 	</div>
 
 	<div id="nav">
 		<ul class="">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="/ferienhaus" class="hide-xsmall hide-small collapsable">Gro&szlig;es Ferienhaus</a></li>
-      <li><a href="/gartenhaus" class="hide-xsmall hide-small collapsable">Gartenhaus</a></li>
-      <li><a href="/anfahrt" class="hide-xsmall hide-small collapsable">Anfahrt</a></li>
-      <li><a href="/kontakt" class="hide-xsmall hide-small collapsable">Kontakt</a></li>
+      <li><a href="/index.html" class="hide-xsmall hide-small">Home</a></li>
+      <li><a href="/ferienhaus" class="active hide-xsmall hide-small">Gro&szlig;es Ferienhaus</a></li>
+      <li><a href="/gartenhaus" class="hide-xsmall hide-small">Gartenhaus</a></li>
+      <li><a href="/anfahrt" class="hide-xsmall hide-small">Anfahrt</a></li>
+      <li><a href="/kontakt" class="hide-xsmall hide-small">Kontakt</a></li>
     </ul>
 		<div class="burger hide-medium hide-large pull-right">
-			<a class="" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
-				<i class="fa fa-bars"></i>
+			<a style="text-decoration: none;" href="javascript:void(0)" onclick="toggleMenu()" title="Toggle Navigation Menu">
+				Menu <i class="fa fa-bars"></i>
 			</a>
 		</div>
   </div>
 
 	<div id="navsmall">
 		<ul id="collapsable">
-			<li><a href="/ferienhaus" class="">Gro&szlig;es Ferienhaus</a></li>
-			<li><a href="/gartenhaus" class="">Gartenhaus</a></li>
-			<li><a href="/anfahrt" class="">Anfahrt</a></li>
-			<li><a href="/kontakt" class="">Kontakt</a></li>
+			<li><a href="/">Home</a></li>
+			<li><a href="/ferienhaus">Gro&szlig;es Ferienhaus</a></li>
+			<li><a href="/gartenhaus">Gartenhaus</a></li>
+			<li><a href="/anfahrt">Anfahrt</a></li>
+			<li><a href="/kontakt">Kontakt</a></li>
 		</ul>
 	</div>
 
@@ -51,31 +47,12 @@
     <p>
         Es erwartet Sie ein gro&szlig;z&uuml;giges Haus mit Terrasse am Teich. Hier kann man grillen oder den Tag am Lagerfeuer ausklingen lassen. Im Erdgeschoss befindet sich der Wohnraum mit komplett ausgestatteter K&uuml;che. Ein knisterndes Kaminfeuer sorgt f&uuml;r Gem&uuml;tlichkeit am Abend. Ein Essplatz mit viel Licht und ein Bad mit Dusche und WC erg&auml;nzen das Erdgeschoss. Im Obergeschoss befinden sich die Schlafgelegenheiten f&uuml;r bis zu 6 Personen. Handt&uuml;cher und Bettw&auml;sche geh&ouml;ren zur Ausstattung.
     </p>
-
-    <a class="prev browse left"></a>
-    <div class="scrollable" id=browsable_1>
-        <div class="items">
-            <div>
-                <p><img src="../img/pension/DSC02324.JPG" width="700"/></p>
-            </div>
-            <div>
-                <p><img src="../img/pension/DSC00374.JPG" width="600"/></p>
-            </div>
-            <div>
-                <p><img src="../img/pension/DSC01152.jpg" width="700"/></p>
-            </div>
-            <div>
-                <p><img src="../img/pension/DSC01157.jpg" width="700"/></p>
-            </div>
-       </div>
-    </div><!-- scrollable -->
-    <a class="next browse right"></a>
-    <div class="navi"></div>
-    <script>
-        $(document).ready(function() {
-        $("#browsable_1").scrollable({circular: true}).navigator();
-        });
-    </script>
+<!---
+    <img src="../assets/img/pension/DSC02324.JPG" />
+    <img src="../assets/img/pension/DSC00374.JPG" />
+    <img src="../assets/img/pension/DSC01152.jpg" />
+    <img src="../assets/img/pension/DSC01157.jpg" />
+-->
   </div><!--- content -->
 </div><!--- main -->
 
