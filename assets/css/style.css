@@ -10,17 +10,26 @@ body {
 	font-size: 16px;
 }
 
-#main {
+p {
+	color: #333;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+.main {
 	padding: 0px 20px;
 	margin: 0 auto;
 	max-width: 1265px;
 }
 
 #header .subheadline {
-	color:#484848;
+	color:#333;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
   padding-top: 10px;
+	font-style: italic;
 }
 
 #header {
@@ -33,7 +42,11 @@ body {
 }
 
 .burger a {
-	color: #484848;
+	color: #333;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
 }
 
 .pull-right {
@@ -66,8 +79,10 @@ h1 a{
 /************************************************* navigation */
 #nav {
 	display: inline-block;
-	width: 100%;
+	width: calc(100% + 40px);
 	margin-top: 35px;
+	padding-left: 20px;
+	background-color: #dbecfd;
 }
 
 #nav ul {
@@ -87,9 +102,7 @@ h1 a{
 	font-size: 1.4em;
 	color: #484848;
 	text-decoration: none;
-	border-right: :1px solid red;
-	background:#ddd;
-	padding: 2px 7px;
+	padding: 10px 7px;
 }
 
 #nav li a:hover, #navsmall li a:hover {
